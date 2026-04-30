@@ -30,3 +30,21 @@ console.log("a == b:", a == b);
 console.log("a != b:", a != b); 
 console.log("a >= b:", a >= b); 
 console.log("a <= b:", a <= b); 
+
+
+
+let obj={
+    name: "Alice",
+    age : 30,
+    Role: "Trainer"
+}
+
+console.log(obj.age);
+console.log(obj.Role);
+
+
+function product(a,b){
+    return a*b;
+
+}
+console.log("Product:", product(3,5))
