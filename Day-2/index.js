@@ -55,3 +55,71 @@ let arr = [1, 2, true, "name", 5];
 // })
 
 arr.filter(x => typeof(x) === "number").map(x => x*5).forEach(x=> console.log("Element after *2: ",x*2 ))
+
+
+
+//Generat random value
+
+console.log(Math.random() * 100) //0-100
+console.log(Math.random() * 10) //0-10
+
+
+//floor => rounds down to nearest integer
+
+console.log(Math.floor(Math.random()*10)+1)// every time it gives whole number
+
+console.log(Math.ceil(Math.random()*100))
+
+
+console.log(5 == "5")
+console.log(5 === "5")
+
+
+let str = "5";
+console.log( Number(str))
+console.log(typeof Number(str))
+
+let val = "2.07";
+
+console.log(parseInt(val))
+console.log(parseFloat(val))
+
+
+//Array
+
+let names = ["Joseph", "Rosie", "Carrie"];
+
+console.log(names.indexOf("Joseph"));
+console.log(names.indexOf("Nick"));
+console.log(names.includes("Rosie"));
+console.log(names.includes("Nick"));
+console.log(names.length);
+console.log(names[1]);
+console.log(names[names.length-1]);
+names.push("John");
+console.log(names);
+console.log(names.pop());
+names.unshift("Nichola");
+console.log(names);
+console.log(names.shift());
+console.log(names);
+
+
+let valToBeFind = "Carrie";
+let index = -1;
+
+for(let i =0;i< names.length;i++){
+    if(names[i] === valToBeFind){
+        index = i;
+        break;
+
+    }
+}
+console.log(index);
+
+
+
+
+
+// console.log(names.splice(1,1));
+
