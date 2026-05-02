@@ -59,6 +59,21 @@ arr.unshift() //add in the beginning
 arr.shift() //removes from the beginning
 
 
+#Reduce Function:
+arr.reduce((acc,curr) =>{ //operation},acc)
+
+
+
+
+#DOM Manipulation:
+
+->Login-Form designing
+->Navigating to other pages using "window.location.href = "page_name";"
+->Manipulating different elements using selectors like id and class
+
+
+
+
 
 
 
