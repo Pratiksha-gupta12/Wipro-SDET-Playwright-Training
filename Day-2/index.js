@@ -123,3 +123,28 @@ console.log(index);
 
 // console.log(names.splice(1,1));
 
+
+
+
+
+//Reduce function
+
+const prices = [10, 20, 30, 40]; 
+
+const product = prices.reduce((acc,curr)=> {
+    return acc * curr},1);
+
+    console.log(product);
+
+
+const fruits = ['papaya', 'banana', 'cherry', 'papaya', 'papaya', 'mango', 'mango']; 
+const tally = fruits.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+console.log(tally);
+
+
+
+
+
