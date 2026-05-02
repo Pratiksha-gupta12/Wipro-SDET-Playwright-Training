@@ -29,6 +29,11 @@ a <= b;
 
 
 
+#TypeOf function
+typeof (str)
+
+
+
 #Object:
 
 
