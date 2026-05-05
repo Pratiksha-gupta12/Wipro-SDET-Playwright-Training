@@ -30,3 +30,39 @@ Same as setTimeout but the same data is printed or logged again and again in a p
 setInterval(()=>{
     console.log("Data checking again and again");
 },5000);
+
+
+#API => 
+fetch("Api name")
+
+#Some Api's
+1- Cat Facts API
+"https://catfact.ninja/fact"
+
+2- Dummy API
+"https://dummyjson.com/products"
+
+3-Countries API
+Provide the ratings and other details
+"https://restcountries.com/v3.1/all"
+
+4- JsonPlaceholder API
+"https://jsonplaceholder.typicode.com/posts"
+
+5- Generate Random User API
+"https://randomuser.me/api/?results=10"
+
+6- Dog API
+"https://dogapi.dog/api/v2/facts"
+
+7- Quotes API
+"https://zenquotes.io/api/quotes"
+
+8- Notify API
+"http://api.open-notify.org/astros.json"
+
+9- Poke API
+"https://pokeapi.co/api/v2/pokemon?limit=20"
+
+10- Todo API
+"https://jsonplaceholder.typicode.com/todos"
