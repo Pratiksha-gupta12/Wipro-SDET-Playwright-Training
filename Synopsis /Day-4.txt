@@ -66,3 +66,4 @@ Provide the ratings and other details
 
 10- Todo API
 "https://jsonplaceholder.typicode.com/todos"
+
