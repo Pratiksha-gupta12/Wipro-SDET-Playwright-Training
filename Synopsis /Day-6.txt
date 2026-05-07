@@ -1,0 +1,187 @@
+//Ques-1
+The Flight Booking Data Cleaner
+
+#Steps
+
+1- Accepted an array of raw flight strings.
+2- Used map() function to iterate through each entry.
+3- Separate each string using split(":").
+4- Further split using split("-").
+5- Converted the raw price into a number using Number().
+6- Created structured flight objects:
+     from,
+      to,
+      price
+
+7- Used filter() function to filter the flights with prices between $100 and $500.
+8- Used JSON.stringify() to convert it into object of string.
+9- Displayed the final results
+
+
+
+#Code Snippet:
+
+
+const [route, raw_price] = flight.split(":");
+
+const [from, to] = route.split("-");
+
+let price = Number(raw_price);
+
+if (price === NaN) {
+    price = 0;
+}
+
+
+
+
+// Ques-2
+E-Commerce Discount Applicator
+
+
+#Steps:
+
+1- Accepted an array of product objects having data :
+    product name
+    price
+    category
+
+2- Created a callback function isEligible().
+3- Check whether:
+    product category is "Electronics"
+    product price is greater than $200
+
+4- Used map() to iterate through all products
+5- Calculated a 10% discount for eligible products and updated product prices.
+6- Added a new property called isDiscounted:
+      true -> discounted products
+      false -> non-discounted products
+
+7- Calculated: Savings and total discounted items
+8- Used setTimeout() to simulate delayed.
+9- Displayed the updated cart.
+
+
+
+
+#Code Snippet
+if (isEligible(product)) {
+
+    let discount = product.price * 0.10;
+
+    totalSavings += discount;
+    discountedItems++;
+
+    return {
+        name: product.name,
+        price: product.price - discount,
+        category: product.category,
+        isDiscounted: true
+    };
+}
+
+
+
+
+//Ques-3
+Movie Stream Analytics:
+
+
+#Steps:
+
+1- Accepted an array of raw movie strings.
+
+2- Used map() to iterate through each entry.
+3- Used split("|") to separate:
+     movie name
+     genre
+     views
+
+4- Converted the views data into a number using Number().
+5- Checked invalid or corrupted view data using isNaN() and assigned 0 to invalid view counts..
+6- Created structured movie objects containing:
+     name
+     genre
+     n_views
+
+7- Used filter() to keep only movies:
+      belonging to "Action" or "Sci-Fi" genres
+      having more than 5000 views
+8- Used sort() to arrange movies in descending order based on views.
+9- Converted the final array into JSON format using JSON.stringify().
+10- Displayed the final result.
+
+
+
+#Code Snippet:
+
+const [name, genre, views] = item.split("|");
+
+n_views = Number(views);
+
+if (isNaN(views)) {
+    n_views = 0;
+}
+
+
+
+
+//Ques-4
+Automated Payroll Processor:
+
+
+#Steps:
+
+1- Accepted an array of employee objects containing:
+
+     employee ID
+     employee name
+     salary
+
+2-  Created a callback function taxLogic() to calculate tax based on salary.
+3- Used map() to iterate through each employee.
+
+4- Calculated: tax amount & net salary to determine employee status:
+"Premium" if net salary is greater than $4000
+"Standard" otherwise
+
+5- Used reduce() to calculate the total net payout of all employees.
+
+6- Used setTimeout() to simulate delayed payroll processing.
+
+7- Displayed the processed employee data after 2000ms.
+
+
+
+
+#Code Snippet:
+
+const tax = taxCallback(employee.salary);
+
+const netSalary = employee.salary - tax;
+
+const status =
+    netSalary > 4000
+    ? "Premium"
+    : "Standard";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
