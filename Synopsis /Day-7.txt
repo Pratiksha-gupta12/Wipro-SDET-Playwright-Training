@@ -1,0 +1,42 @@
+# Hoisting
+
+ console.log(greet);  // undefined
+ var greet = "Hello World";
+ console.log(greet) // Hello World
+
+
+ #function Hoisting
+
+ sayHi() // Hello World 
+ function sayHi(){
+    console.log("Hello World!")
+}
+
+
+# OBJECTS AND PROTOTYPES
+
+ const car = {
+     brand : "Tesla",
+     start : function(){
+        console.log("Vroom Vroom")
+    }
+}
+
+const c1= new start();
+
+start.prototype.stop = function(){
+ console.log("stop")
+ }
+
+
+
+
+#For-in and For-of
+
+for(let e in arr){ //in -> index, of -> value
+    console.log(e)
+}
+
+for(let e of arr){ //in -> index, of -> value
+    console.log(e)
+}

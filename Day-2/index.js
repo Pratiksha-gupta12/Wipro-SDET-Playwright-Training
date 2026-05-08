@@ -58,7 +58,7 @@ arr.filter(x => typeof(x) === "number").map(x => x*5).forEach(x=> console.log("E
 
 
 
-//Generat random value
+//Generate random value
 
 console.log(Math.random() * 100) //0-100
 console.log(Math.random() * 10) //0-10

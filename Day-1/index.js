@@ -22,9 +22,10 @@ console.log("SubString:", str.substring(0,4));
 
 
 
-//logical operations
+//logical operations --> returns boolean value
 
-console.log("a > b:", a > b); 
+
+console.log("a > b:", a > b);
 console.log("a < b:", a < b); 
 console.log("a == b:", a == b); 
 console.log("a != b:", a != b); 
