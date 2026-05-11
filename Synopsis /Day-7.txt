@@ -33,7 +33,7 @@ start.prototype.stop = function(){
 
 #For-in and For-of
 
-for(let e in arr){ //in -> index, of -> value
+for(let e in arr){ //in -> index,  of-> value
     console.log(e)
 }
 
