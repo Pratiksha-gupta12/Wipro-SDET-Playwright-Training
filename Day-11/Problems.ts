@@ -130,18 +130,18 @@
 //ques-5
 
 
-type MarginValue =
-    `${number}px`
-    | `${number}rem`
-    | `${number}vh`;
+// type MarginValue =
+//     `${number}px`
+//     | `${number}rem`
+//     | `${number}vh`;
 
-let margin1: MarginValue = "10px";
-let margin2: MarginValue = "2rem";
-let margin3: MarginValue = "50vh";
+// let margin1: MarginValue = "10px";
+// let margin2: MarginValue = "2rem";
+// let margin3: MarginValue = "50vh";
 
-console.log(margin1);
-console.log(margin2);
-console.log(margin3);
+// console.log(margin1);
+// console.log(margin2);
+// console.log(margin3);
 
 
 
@@ -149,23 +149,53 @@ console.log(margin3);
 
 //ques-6
 
-type UnwrapPromise<T> =
-    T extends Promise<infer U> ? U : T;
+// type UnwrapPromise<T> =
+//     T extends Promise<infer U> ? U : T;
 
 
-// Examples
 
-type A = UnwrapPromise<Promise<string>>;
-type B = UnwrapPromise<Promise<number>>;
-type C = UnwrapPromise<boolean>;
+// type A = UnwrapPromise<Promise<string>>;
+// type B = UnwrapPromise<Promise<number>>;
+// type C = UnwrapPromise<boolean>;
 
 
-// Variables
+// let value1: A = "Hello";
+// let value2: B = 100;
+// let value3: C = true;
 
-let value1: A = "Hello";
-let value2: B = 100;
-let value3: C = true;
+// console.log(value1);
+// console.log(value2);
+// console.log(value3);
 
-console.log(value1);
-console.log(value2);
-console.log(value3);
+
+
+//ques-7
+
+type AllEvents =
+    | 'click'
+    | 'dbclick'
+    | 'submit'
+    | 'reset'
+    | 'keypress';
+
+
+type MouseEvents = Extract<
+    AllEvents,
+    'click' | 'dbclick'
+>;
+
+type NonFormEvents = Exclude<
+    AllEvents,
+    'submit' | 'reset'
+>;
+
+let event1: MouseEvents = 'click';
+let event2: MouseEvents = 'dbclick';
+
+let event3: NonFormEvents = 'click';
+let event4: NonFormEvents = 'keypress';
+
+console.log(event1);
+console.log(event2);
+console.log(event3);
+console.log(event4);
