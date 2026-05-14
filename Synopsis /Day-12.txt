@@ -1,0 +1,33 @@
+#Playwright Basics
+Playwright is an automation testing framework
+Used for browser automation and UI testing
+
+
+
+#Core Concepts
+
+locator - finds element
+expect - validation/assertion
+
+
+
+
+#Playwright Methods
+
+page.goto()
+locator()
+getByRole()
+click()
+fill()
+expect()
+
+
+
+
+#Playwright Assertion Example
+expect(page.url()).toBe('https://www.techxincorporation.com/');
+
+
+
+#Commands:
+npx playwright test {file_name}

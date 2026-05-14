@@ -9,7 +9,7 @@ test('check title', async ({page})=>{
 
 
 
-    
+
     // const exploreBtn = page.getByRole("link", {name: /Explore/});
     // await exploreBtn.click();
     // expect (page.url()).toBe("https://www.techxincorporation.com/training");
@@ -17,11 +17,18 @@ test('check title', async ({page})=>{
 
 
 
-    const consultBtn = page.getByRole("link", {name: /Request/ }).nth(0);
+    // const consultBtn = page.getByRole("link", {name: /Request/ }).nth(0);
 
-    //[top bar result, main page result ] --> [0,1] --> 1
-    await consultBtn.click();
-    expect(page.url()).toBe("https://www.techxincorporation.com/contact");
+    // //[top bar result, main page result ] --> [0,1] --> 1
+    // await consultBtn.click();
+    // expect(page.url()).toBe("https://www.techxincorporation.com/contact");
+
+
+    const block = page.getByText('Cloud, Data & Platforms');
+    await block.waitFor({state: 'visible'})
+    
+    await expect(block).toBeVisible();
+
 
 
 });
